@@ -99,7 +99,7 @@ header p, header a, footer p, footer a {
 }
 
 .model-img {
-    background-size: contain;
+    background-size: cover;
     border-right: 1px solid black;
     border-left: 1px solid black;
 }
@@ -336,10 +336,6 @@ header p, header a, footer p, footer a {
 /* Main End */
 /* Footer */
 
-main .car-img {
-    width: 100%;
-}
-
 footer{
     background-color: black;
 }
@@ -361,6 +357,120 @@ footer .container {
 }
 
 /* Footer End */
+
+/* Mobile  */
+
+@media only screen and (max-width: 950px) {
+    header .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header .container * {
+        margin: 0.2em;
+    }
+
+    .links-head, .links-foot{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu-head-btn, .menu-head-container {
+        order: 1;
+    }
+
+    /* Main */
+
+    .showcase-section {
+        flex-wrap: wrap;
+        height: auto;
+        margin: 1em 0 1em 0;
+    }
+
+    .model-img {
+        width: 100%;
+        height: 240px;
+        order: 1;
+        border: 1px solid black;
+    }
+
+    .model-link {
+        width: 100%;
+        opacity: 100%;
+    }
+
+    .model-link h3 {
+        margin-top: 0;
+    }
+
+    .model-button {
+        max-height: 20%;
+        transform: translateY(500%);
+    }
+
+    .model-video {
+        display: none;
+    }
+
+    /* Main - Model  */
+
+    .container-specs {
+        flex-wrap: wrap;
+    }
+
+    .specs {
+        width: 100%;
+        margin: 0;
+    }
+
+    .specs-title {
+        margin-left: 1%;
+        width: 100%;
+    }
+
+    .container-main-img {
+        width: 100%;
+        margin: 1em 0 1em 0;
+    }
+
+    .car-image img {
+        width: 100%;
+    }
+
+    .img-selector {
+        max-width: 100%;
+    }
+
+    .container-img-big {
+        display: none;
+    }
+
+    .map-title {
+        margin: 1em 0 1em 0;
+    }
+
+    .map {
+        width: 100%;
+        height: 400px;
+    }
+
+    /* Footer */
+
+    footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .links-foot li, .copyright-foot {
+        margin: 1em 0.5em;
+    }
+
+}
+
+/* Mobile End */
 
 * {
     font-family: Arial, Helvetica, sans-serif !important;
